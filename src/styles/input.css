@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: dana;
+    font-style: normal;
+    src: url('../font/Dana-Pro/farsinumral/webfonts/fonts/eot/dana-fanum-black.eot') format('embedded-opentype'),
+        url('../font/Dana-Pro/farsinumral/webfonts/fonts/woff/dana-fanum-medium.woff') format('woff'),
+        url('../font/Dana-Pro/farsinumral/webfonts/fonts/woff2/dana-fanum-medium.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: dana;
+}
+body{
+    max-width: 1350px;
+    line-height: 2rem;
+}
+.nav {
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-inline: 1.5rem;
+
+}
+
+.popular ul li a{
+    color: #444;
+    font-size: 1.2em;
+    background: rgba(191, 191, 191, .09);
+    padding: 6px 15px;
+    border-radius: 10px;
+    transition: .5s;
+    display: block;
+}
+.popular ul li a:before {
+    content: '\e8f8';
+    font-family: ficon2;
+    vertical-align: middle;
+    margin-left: 4px;
+}

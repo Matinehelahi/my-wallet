@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="bg-bodyColor">
+<body dir="rtl" class="bg-bodyColor p-5">
     <main class="main">
         <!--==================== HEADER ====================-->
         <header class="h-11 bg-yellow-300" id="header">
@@ -28,41 +28,79 @@
             </div>
         </header>
         <!--==================== nav bar ====================-->
-        <nav class="bg-white h-10">dss
+        <nav class="nav bg-white h-11">
+            <div href="#" class="login__menu">
 
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#" class="nav__link active-link">خرید ارز دیجیتال</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">قیمت ارزهای دیجیتال</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">منو کامل</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">پشتیبانی</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">بلاگ</a>
+                    </li>
+
+                </ul>
+
+                <!-- close button -->
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+            </div>
+            <!-- toggle button -->
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
         </nav>
         <!--==================== HOME ====================-->
-        <section class="home bg-blue-50 flex" id="home">
+        <section class="home bg-bodyColor text-textAll flex" id="home">
             <div class="">
-                <div class="flex justify-center items-center text-3xl font-bold">
+                <div class="text-texthome flex justify-center items-center text-3xl font-bold">
                     <span>کیف پول</span>
                     <div><img src="../src/images/coco.svg" alt="img"></div>
                     <span>صرافی ارز دیجیتال</span>
                 </div>
-                <h1 class="text-6xl font-black text-center p-4"><span>فروش و خرید ارز دیجیتال</span> <span class="text-blueText">در صرافی کیف پول من</span></h1>
-                <div class="text-right">خرید ارز دیجیتال در کیف پول من اولین سامانه نگهداری ارزهای دیجیتال پیشگام کشور انجام می‌شود که با
+                <h1 class="text-6xl font-black text-center p-4 text-texthome "><span>فروش و خرید ارز دیجیتال</span>
+                    <span class="text-blueText">در صرافی کیف پول من</span>
+                </h1>
+                <div class="text-right font-bold text-lg leading-7 text-texthome text-justify ">خرید ارز دیجیتال در کیف
+                    پول من اولین سامانه نگهداری ارزهای دیجیتال پیشگام کشور انجام می‌شود که با
                     سبک و استانداردهای جدید، سرویس‌های نگهداری و خرید رمز ارزهای الکترونیک را برای افراد حقیقی و حقوقی
-                    آماده کرده است. ما هر روزه، هزاران تراکنش واریزی و دریافتی را در بسیاری حیطه‌ها همچون خرید بیت کوین
+                    آماده کرده است. ما هر روزه، هزاران تراکنش واریزی و دریافتی را در بسیاری حیطه‌ها همچون <span
+                        class="text-blueText font-bold text-xl">خرید بیت کوین</span>
                     بر بستر کیف پول من، بدون کوچک‌ترین خطایی به گردش در می‌آوریم؛ با این هدف که در افزایش سهم تجارت
                     الکترونیکی در تولید ناخالص ملی و کمک به رشد و توسعه کسب‌وکارها، نقش سازنده و موثری داشته باشیم.
                     امروز کیف پول من نقش موثری در رشد و ارتقاء کیفیت خرید و فروش ارز دیجیتال در بازار کشور دارد.
                 </div>
-                <div>
-                    <a href="#">ثبت نام در کیف پول</a>
-                    <a href="#">ورود به حساب</a>
+                <div class="my-6 text-center ">
+                    <a class="bg-blueText text-white p-3 rounded-lg  mx-3 " href="#">ورود به حساب</a>
+                    <a class="bg-blueText text-white p-3 rounded-lg" href="#">ثبت نام در کیف پول</a>
+
                 </div>
-                <div>
-                    <div>
-                        <span>
+                <div class="flex justify-evenly">
+                    <div class="flex gap-2 items-center">
+                        <span class="">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                             </svg>
                         </span>
-                        <span>سرعت بالا در ثبت سفارش و انجام معاملات.</span>
+                        <span class="font-bold text-base text-texthome">سرعت بالا در ثبت سفارش و انجام معاملات.</span>
                     </div>
-                    <div>
+                    <div class="flex gap-2 items-center">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
@@ -70,7 +108,7 @@
                                     d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
                             </svg>
                         </span>
-                        <span>صرافی امن و مطمئن خرید رمزارز</span>
+                        <span class="font-bold text-base text-texthome">صرافی امن و مطمئن خرید رمزارز</span>
                     </div>
                 </div>
             </div>
@@ -80,7 +118,41 @@
         <!--==================== Popular ====================-->
 
         <section class="popular section" id="popular">
-            <div class="popular__container container grid"></div>
+            <div class="popular__container container ">
+                <div class="  items-center flex-nowrap">
+                    <h2 class="font-bold text-textAll">
+                        پرطرفدارها :
+                    </h2>
+                    <ul class="flex overflow-hidden flex-nowrap text-sm gap-2">
+                        <li>
+                            <a href="#">خرید بیت کوین</a>
+                        </li>
+                        <li>
+                            <a href="#">خرید ترون</a>
+                        </li>
+                        <li>
+                            <a href="#">وایت پیپر چیست؟</a>
+                        </li>
+                        <li>
+                            <a href="#">خرید تتر</a>
+                        </li>
+                        <li>
+                            <a href="#">فروش داگز</a>
+                        </li>
+                        <li>
+                            <a href="#">خرید اتریوم</a>
+                        </li>
+                        <li>
+                            <a href="#">خرید ارز ترامپ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex justify-evenly">
+                    <a href="#" class="m-3"> <img class="rounded-lg" src="../src/images/popular1.jpg" alt=""></a>
+                    <a href="#" class="m-3"> <img class="rounded-lg" src="../src/images/popular2.png" alt="">
+                    </a>
+                </div>
+            </div>
 
         </section>
         <!--==================== The most profitable currencies ====================-->
