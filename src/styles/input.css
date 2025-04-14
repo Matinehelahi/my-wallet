@@ -17,21 +17,23 @@
     box-sizing: border-box;
     font-family: dana;
 }
-body{
+
+body {
     max-width: 1350px;
     line-height: 2rem;
+    
 }
+
 .nav {
     position: relative;
-    height: var(--header-height);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /* display: flex;
+    justify-content: space-around; */
+    align-items: right;
     margin-inline: 1.5rem;
 
 }
 
-.popular ul li a{
+.popular ul li a {
     color: #444;
     font-size: 1.2em;
     background: rgba(191, 191, 191, .09);
@@ -40,6 +42,7 @@ body{
     transition: .5s;
     display: block;
 }
+
 .popular ul li a:before {
     content: '\e8f8';
     font-family: ficon2;
@@ -48,11 +51,11 @@ body{
 }
 
 /*============================= header & nav =============================*/
-nav{
+nav {
     position: relative;
     width: 100%;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     justify-content: space-between;
     align-items: center;
 }
@@ -60,32 +63,26 @@ nav{
 .nav__toggle {
     display: flex;
     cursor: pointer;
-    font-size: 1.2rem;
-    color: var(--title-color);
-    border: 1px solid #646765;
+    font-size: 2rem;
     padding: 7px;
-    border-radius: 50%;
     font-weight: 500;
 }
 
 .nav__close {
     display: flex;
     cursor: pointer;
-    font-size: 1.2rem;
-    color: var(--nav-color);
-    border: 1px solid var(--nav-color);
+    font-size: 2rem;
     padding: 10px;
-    border-radius: 50%;
     font-weight: 600;
 }
+
 @media screen and (max-width:1150px) {
     .nav__menu {
         position: fixed;
-        top: -100%;
+        top: 80px;
         right: 0;
-        background-color:white ;
+        background-color: white;
         width: 45%;
-        height: 100%;
         padding-block: 4.5rem 3.5rem;
         box-shadow: 0 4px 16px hsla(353, 100%, 8%, .1);
         z-index: 1600;
