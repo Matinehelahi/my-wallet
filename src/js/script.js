@@ -12,7 +12,7 @@ if(navToggle){
 /* Menu hidden */
 if (navClose){
     navClose.addEventListener('click',function(){
-        navMenu.classList.remove("nav-show");
+        navMenu.classList.remove("show-menu");
     });
 }
 /*=============== REMOVE MENU MOBILE ===============*/

@@ -619,6 +619,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .size-6 {
   width: 1.5rem;
   height: 1.5rem;
@@ -858,7 +862,7 @@ nav {
 @media screen and (max-width:1150px) {
   .nav__menu {
     position: fixed;
-    top: 80px;
+    top: -120%;
     right: 0;
     background-color: white;
     width: 45%;
