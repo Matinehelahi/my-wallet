@@ -24,15 +24,11 @@ body {
     
 }
 
-.nav {
-    position: relative;
-    /* display: flex;
-    justify-content: space-around; */
-    align-items: right;
-    margin-inline: 1.5rem;
+.main {
+    overflow: hidden;
+    margin-top: 70px;
 
 }
-
 .popular ul li a {
     color: #444;
     font-size: 1.2em;
@@ -51,13 +47,24 @@ body {
 }
 
 /*============================= header & nav =============================*/
-nav {
-    position: relative;
+header{
+    position: absolute;
     width: 100%;
     top: 0;
-    left: 0;
+    right: 0; 
+    background-color: blue;
+}
+nav {
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 9;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    background-color: white;
+    transition: top 0.3s;
+    position: fixed;
 }
 
 .nav__toggle {
