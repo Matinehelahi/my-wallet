@@ -7,8 +7,8 @@
 
     <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="../src/images/favicon/logo-wallet.svg" type="image/x-icon">
-<!--=============== REMIXICONS ===============-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="">
     <link href="../dist/output.css" rel="stylesheet">
@@ -18,8 +18,8 @@
 </head>
 
 <body dir="rtl" class="bg-bodyColor p-5">
-        <!--==================== HEADER ====================-->
-        <!-- <header class="h-11 bg-blueText" id="header">
+    <!--==================== HEADER ====================-->
+    <!-- <header class="h-11 bg-blueText" id="header">
             <div class="action__bar">
                 <div href="#" class="nav__logo">
                     <img src="" alt="image">
@@ -27,53 +27,58 @@
 
             </div>
         </header> -->
-        <!--==================== nav bar ====================-->
-        <nav class="nav flex p-2">
-            
-             <div class="nav__menu mt-14" id="nav-menu">
-                <ul class="nav__list">
-                    <li>
-                        <div href="#" class="login__menu flex justify-around">
-                            <button class="btn w-1/2 h-12 bg-white text-blueText rounded-lg mx-2 border-2 border-slate-400 border-solid"> ورود </button>
-            
-                            <button class="btn w-1/2 bg-blueText text-white  rounded-lg  mx-2 border-2 border-blueText border-solid">ثبت نام </button>
-                        </div>                    </li>
-                    <li>
-                        <a href="#" class="nav__link active-link">خرید ارز دیجیتال</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav__link">قیمت ارزهای دیجیتال</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav__link">منو کامل</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav__link">پشتیبانی</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav__link">بلاگ</a>
-                    </li>
+    <!--==================== nav bar ====================-->
+    <nav class="nav flex p-2">
 
-                </ul>
+        <div class="nav__menu mt-14" id="nav-menu">
+            <ul class="nav__list">
+                <li>
+                    <div href="#" class="login__menu flex justify-around">
+                        <button
+                            class="btn w-1/2 h-12 bg-white text-blueText rounded-lg mx-2 border-2 border-slate-400 border-solid">
+                            ورود </button>
+
+                        <button
+                            class="btn w-1/2 bg-blueText text-white  rounded-lg  mx-2 border-2 border-blueText border-solid">ثبت
+                            نام </button>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="nav__link active-link">خرید ارز دیجیتال</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__link">قیمت ارزهای دیجیتال</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__link">منو کامل</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__link">پشتیبانی</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__link">بلاگ</a>
+                </li>
+
+            </ul>
 
             <!-- close button -->
 
             <div class="nav__close" id="nav-close">
-                    <i class="ri-close-large-line"></i>
-                </div>
-            </div> 
-            <!-- toggle button -->
+                <i class="ri-close-large-line"></i>
+            </div>
+        </div>
+        <!-- toggle button -->
 
-            <div class="nav__toggle right-0" id="nav-toggle">
-                <i class="ri-menu-line"></i>
-            </div>
-            <div class="wallet-icon w-8">
-                <img src="../src/images/favicon/logo-wallet.svg" alt="">
-            </div>
-        </nav>
-        <main class="main">
+        <div class="nav__toggle right-0" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+        <div class="wallet-icon w-8">
+            <img src="../src/images/favicon/logo-wallet.svg" alt="">
+        </div>
+    </nav>
+    <main class="main">
         <!--==================== HOME ====================-->
-        <section class="home bg-red text-textAll flex" id="home">
+        <section class="home bg-red text-textAll " id="home">
             <div class="">
                 <div class="text-texthome flex justify-center items-center text-3xl font-bold">
                     <span>کیف پول</span>
@@ -120,7 +125,18 @@
                     </div>
                 </div>
             </div>
-
+            <div class="change flex align-middle justify-center my-10">
+                <div class="circle bg-bubble-gum flex align-middle justify-center rounded-full">
+                    <div class="square-outside relative top-7 shadow-2xl rounded-3xl bg-white">
+                        <div class="square-inside">
+                            <div class="square-top bg-blueText">gs</div>
+                            <div class="square-bottom"></div>
+                            <div class="button-crypto"></div>
+                            <div class="resive"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--==================== Popular ====================-->
@@ -165,8 +181,10 @@
         </section>
         <!--==================== The most profitable currencies ====================-->
 
-        <section class="profitable section" id="profitable">
-            <div class="profitable__container container grid"></div>
+        <section class="profitable section m-6" id="profitable">
+            <div class="profitable__container container grid">
+
+            </div>
 
         </section>
         <!--==================== For the first time in Iran ====================-->
