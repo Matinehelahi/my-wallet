@@ -14,8 +14,10 @@ module.exports = {
       'texthome': 'rgb(68, 68, 68);',
       'asilver': '#444',
       'backgroundsilver': 'rgba(191, 191, 191, .09);',
-      'bubble-gum': '#ff77e9',
-      'bermuda': '#78dcca',
+      'violet': '#ddd6fe',
+      'dark-hover-off': '#5d43db;',
+      'buttonHome': '#007aff;',
+
     },
     extend: {},
   },

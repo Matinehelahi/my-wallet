@@ -10,7 +10,6 @@
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="">
     <link href="../dist/output.css" rel="stylesheet">
 
     <title>خرید ارز دیجیتال _ فروش ارز دیجیتال _ کیف پول ارز دیجیتال</title>
@@ -19,63 +18,79 @@
 
 <body dir="rtl" class="bg-bodyColor p-5">
     <!--==================== HEADER ====================-->
-    <!-- <header class="h-11 bg-blueText" id="header">
-            <div class="action__bar">
-                <div href="#" class="nav__logo">
-                    <img src="" alt="image">
-                </div>
-
+    <header class="header bg-violet" id="header">
+        <div class="action__bar flex">
+            <div href="#" class="nav__logo bg-bermuda w-10/12 h-12">
             </div>
-        </header> -->
-    <!--==================== nav bar ====================-->
-    <nav class="nav flex p-2">
+            <div class="flex  gap-4 p-3">
+                <div class="">
+                    <div class="text-center ">
+                        <button class="text-dark-hover-off">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                            </svg>
 
-        <div class="nav__menu mt-14" id="nav-menu">
-            <ul class="nav__list">
-                <li>
-                    <div href="#" class="login__menu flex justify-around">
-                        <button
-                            class="btn w-1/2 h-12 bg-white text-blueText rounded-lg mx-2 border-2 border-slate-400 border-solid">
-                            ورود </button>
-
-                        <button
-                            class="btn w-1/2 bg-blueText text-white  rounded-lg  mx-2 border-2 border-blueText border-solid">ثبت
-                            نام </button>
+                        </button>
                     </div>
-                </li>
-                <li>
-                    <a href="#" class="nav__link active-link">خرید ارز دیجیتال</a>
-                </li>
-                <li>
-                    <a href="#" class="nav__link">قیمت ارزهای دیجیتال</a>
-                </li>
-                <li>
-                    <a href="#" class="nav__link">منو کامل</a>
-                </li>
-                <li>
-                    <a href="#" class="nav__link">پشتیبانی</a>
-                </li>
-                <li>
-                    <a href="#" class="nav__link">بلاگ</a>
-                </li>
-
-            </ul>
-
-            <!-- close button -->
-
-            <div class="nav__close" id="nav-close">
-                <i class="ri-close-large-line"></i>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="../src/images/color.svg" class="w-6" alt="">
+                </div>
             </div>
         </div>
-        <!-- toggle button -->
+        <nav class="nav flex p-2 top-12">
 
-        <div class="nav__toggle right-0" id="nav-toggle">
-            <i class="ri-menu-line"></i>
-        </div>
-        <div class="wallet-icon w-8">
-            <img src="../src/images/favicon/logo-wallet.svg" alt="">
-        </div>
-    </nav>
+            <div class="nav__menu mt-14" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <div href="#" class="login__menu flex justify-around">
+                            <button
+                                class="btn w-1/2 h-12 bg-white text-blueText rounded-lg mx-2 border-2 border-slate-400 border-solid">
+                                ورود </button>
+
+                            <button
+                                class="btn w-1/2 bg-blueText text-white  rounded-lg  mx-2 border-2 border-blueText border-solid">ثبت
+                                نام </button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link active-link">خرید ارز دیجیتال</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">قیمت ارزهای دیجیتال</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">منو کامل</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">پشتیبانی</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">بلاگ</a>
+                    </li>
+
+                </ul>
+
+                <!-- close button -->
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+            </div>
+            <!-- toggle button -->
+
+            <div class="nav__toggle right-0" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+            <div class="wallet-icon w-8">
+                <img src="../src/images/favicon/logo-wallet.svg" alt="">
+            </div>
+        </nav>
+    </header>
+    <!--==================== nav bar ====================-->
+
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home bg-red text-textAll " id="home">
@@ -125,14 +140,103 @@
                     </div>
                 </div>
             </div>
-            <div class="change flex align-middle justify-center my-10">
-                <div class="circle bg-bubble-gum flex align-middle justify-center rounded-full">
-                    <div class="square-outside relative top-7 shadow-2xl rounded-3xl bg-white">
-                        <div class="square-inside">
-                            <div class="square-top bg-blueText">gs</div>
-                            <div class="square-bottom"></div>
-                            <div class="button-crypto"></div>
-                            <div class="resive"></div>
+            <div class="change flex align-middle justify-center mt-5">
+                <div class="circle bg-textAll flex align-middle justify-center rounded-full">
+                    <div class="square-outside relative top-7 shadow-2xl rounded-3xl bg-white p-2 ">
+                        <div class="square-inside flex align-middle justify-center">
+                            <div class="">
+                                <div class="square-top rounded-3xl bg-violet p-4">
+                                    <div class="flex justify-between">
+                                        <div>دریافت میکنید </div>
+                                        <div class="bg-white w-20 rounded-2xl flex align-middle justify-center">
+                                            <div>
+                                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                                                        fill="#0F0F0F"></path>
+                                                </svg>
+                                            </div>
+                                            <div>BTC</div>
+                                            <div></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="square-bottom rounded-3xl my-1 bg-violet p-4">
+                                    <div class="flex justify-between">
+                                        <div> پرداخت میکنید </div>
+                                        <div class="bg-white w-20  rounded-2xl flex align-middle justify-center line-">
+                                            <div>Toman</div>
+                                            <div class="rounded-full">
+                                                <svg  width="20px" height="20px" viewBox="0 0 36 36"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                                                    role="img" class="iconify iconify--twemoji"
+                                                    preserveAspectRatio="xMidYMid meet">
+
+                                                    <path fill="#DA0001"
+                                                        d="M0 27a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4v-4H0v4z">
+
+                                                    </path>
+
+                                                    <path fill="#EEE" d="M0 13h36v10H0z">
+
+                                                    </path>
+
+                                                    <path fill="#239F40"
+                                                        d="M36 13V9a4 4 0 0 0-4-4H4a4 4 0 0 0-4 4v4h36z">
+
+                                                    </path>
+
+                                                    <path fill="#E96667" d="M0 23h36v1H0z">
+
+                                                    </path>
+
+                                                    <g fill="#BE1931">
+
+                                                        <path
+                                                            d="M19.465 14.969c.957.49 3.038 2.953.798 5.731c1.391-.308 3.162-4.408-.798-5.731zm-2.937 0c-3.959 1.323-2.189 5.423-.798 5.731c-2.24-2.778-.159-5.241.798-5.731zm1.453-.143c.04.197 1.101.436.974-.573c-.168.408-.654.396-.968.207c-.432.241-.835.182-.988-.227c-.148.754.587.975.982.593z">
+
+                                                        </path>
+
+                                                        <path
+                                                            d="M20.538 17.904c-.015-1.248-.677-2.352-1.329-2.799c.43.527 1.752 3.436-.785 5.351l.047-5.097l-.475-.418l-.475.398l.08 5.146l-.018-.015c-2.563-1.914-1.233-4.837-.802-5.365c-.652.447-1.315 1.551-1.329 2.799c-.013 1.071.477 2.243 1.834 3.205a6.375 6.375 0 0 1-1.678.201c.464.253 1.34.192 2.007.131l.001.068l.398.437l.4-.455v-.052c.672.062 1.567.129 2.039-.128a6.302 6.302 0 0 1-1.732-.213c1.344-.961 1.83-2.127 1.817-3.194z">
+
+                                                        </path>
+
+                                                    </g>
+
+                                                    <path fill="#7BC58C" d="M0 12h36v1H0z">
+
+                                                    </path>
+
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-violet absolute border-2 border-white rounded-full p-2 absolute top-28 right-44">
+                                    <svg fill="#000000" width="25px" height="25px" viewBox="0 0 1024 1024"
+                                        xmlns="http://www.w3.org/2000/svg" class="icon">
+                                        <path
+                                            d="M847.9 592H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h605.2L612.9 851c-4.1 5.2-.4 13 6.3 13h72.5c4.9 0 9.5-2.2 12.6-6.1l168.8-214.1c16.5-21 1.6-51.8-25.2-51.8zM872 356H266.8l144.3-183c4.1-5.2.4-13-6.3-13h-72.5c-4.9 0-9.5 2.2-12.6 6.1L150.9 380.2c-16.5 21-1.6 51.8 25.1 51.8h696c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z">
+                                        </path>
+                                    </svg>
+                                    <path
+                                        d="M847.9 592H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h605.2L612.9 851c-4.1 5.2-.4 13 6.3 13h72.5c4.9 0 9.5-2.2 12.6-6.1l168.8-214.1c16.5-21 1.6-51.8-25.2-51.8zM872 356H266.8l144.3-183c4.1-5.2.4-13-6.3-13h-72.5c-4.9 0-9.5 2.2-12.6 6.1L150.9 380.2c-16.5 21-1.6 51.8 25.1 51.8h696c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z">
+                                    </path>
+                                </div>
+                                <button
+                                    class="button-crypto rounded-2xl bg-buttonHome text-white font-extrabold text-2xl cursor-pointer">
+                                    خرید بیت کوین </button>
+                                <div class="resive flex align-middle gap-2 pr-2">
+                                    <div>1BTC</div>
+                                    <div>تحویل میگیرید</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

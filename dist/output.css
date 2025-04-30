@@ -588,6 +588,10 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -596,8 +600,72 @@ video {
   right: 0px;
 }
 
+.top-12 {
+  top: 3rem;
+}
+
 .top-7 {
   top: 1.75rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.top-6 {
+  top: 1.5rem;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.right-2\/4 {
+  right: 50%;
+}
+
+.right-1\/2 {
+  right: 50%;
+}
+
+.right-2\/3 {
+  right: 66.666667%;
+}
+
+.right-1\/3 {
+  right: 33.333333%;
+}
+
+.right-24 {
+  right: 6rem;
+}
+
+.right-28 {
+  right: 7rem;
+}
+
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
+.top-8 {
+  top: 2rem;
+}
+
+.right-44 {
+  right: 11rem;
+}
+
+.top-28 {
+  top: 7rem;
 }
 
 .m-3 {
@@ -618,9 +686,9 @@ video {
   margin-right: 0.75rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .my-6 {
@@ -630,6 +698,10 @@ video {
 
 .mt-14 {
   margin-top: 3.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
@@ -645,10 +717,6 @@ video {
   height: 1.5rem;
 }
 
-.h-11 {
-  height: 2.75rem;
-}
-
 .h-12 {
   height: 3rem;
 }
@@ -657,8 +725,36 @@ video {
   width: 50%;
 }
 
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-8 {
   width: 2rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-nowrap {
@@ -673,6 +769,10 @@ video {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .justify-around {
   justify-content: space-around;
 }
@@ -685,8 +785,16 @@ video {
   gap: 0.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .rounded-3xl {
@@ -699,6 +807,10 @@ video {
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border-2 {
@@ -714,6 +826,11 @@ video {
   border-color: rgb(93 67 219 / var(--tw-border-opacity, 1));
 }
 
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
 .bg-blueText {
   --tw-bg-opacity: 1;
   background-color: rgb(93 67 219 / var(--tw-bg-opacity, 1));
@@ -724,14 +841,23 @@ video {
   background-color: rgb(248 248 248 / var(--tw-bg-opacity, 1));
 }
 
-.bg-bubble-gum {
+.bg-buttonHome {
+  background-color: #007aff;;
+}
+
+.bg-violet {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 119 233 / var(--tw-bg-opacity, 1));
+  background-color: rgb(221 214 254 / var(--tw-bg-opacity, 1));
 }
 
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-textAll {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 34 34 / var(--tw-bg-opacity, 1));
 }
 
 .p-2 {
@@ -750,6 +876,15 @@ video {
   padding: 1.25rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -764,6 +899,15 @@ video {
 
 .align-middle {
   vertical-align: middle;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -804,6 +948,10 @@ video {
   font-weight: 700;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .leading-7 {
   line-height: 1.75rem;
 }
@@ -811,6 +959,10 @@ video {
 .text-blueText {
   --tw-text-opacity: 1;
   color: rgb(93 67 219 / var(--tw-text-opacity, 1));
+}
+
+.text-dark-hover-off {
+  color: #5d43db;;
 }
 
 .text-textAll {
@@ -879,12 +1031,15 @@ body {
 
 /*============================= header & nav =============================*/
 
-header{
+.header {
   position: absolute;
   width: 100%;
+  height: 7rem;
   top: 0;
   right: 0;
-  background-color: blue;
+}
+
+.nav__logo {
 }
 
 nav {
@@ -963,22 +1118,31 @@ nav {
 
 /*============================= header & nav =============================*/
 
-.change{
+.change {
   width: 100%;
 }
 
-.circle{
-  width: 27rem;
-  height:25rem;
+.circle {
+  width: 29rem;
+  height: 27rem;
 }
 
-.square-outside{
-  width: 22rem;
-  height:20rem;
+.square-outside {
+  width: 25rem;
+  height: 23rem;
 }
 
-.square-top{
-  background-color: #818cf8;
-  width: 20rem;
-  height: 30% ;
+.square-top {
+  width: 24rem;
+  height: 8rem;
+}
+
+.square-bottom {
+  width: 24rem;
+  height: 8rem;
+}
+
+.button-crypto {
+  width: 24rem;
+  height: 4rem;
 }
