@@ -17,25 +17,30 @@ if (navClose){
 }
 /*=============== REMOVE MENU MOBILE ===============*/
 
+/*=============== scroll navbar===============*/
 
-/*=============== API ===============*/
+  const navbar = document.querySelector('nav');
 
-async function fetchVTGPrice() {
-    try {
-      const res = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=victory-gem&vs_currencies=usd');
-      const data = await res.json();
-      const price = data['victory-gem'].usd;
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
   
-      document.getElementById('vtg-price').innerText = price.toFixed(6); // نمایش با 6 رقم اعشار
-    } catch (error) {
-      document.getElementById('vtg-price').innerText = "خطا در دریافت قیمت";
-      console.error(error);
+    if (scrollY > 0 && scrollY < 50) {
+      // کاهش فاصله از بالا در اسکرول کم
+      navbar.classList.add('top-[calc(4rem-2vw)]'); // فاصله از بالا کاهش پیدا می‌کنه
+      navbar.classList.remove('top-14'); // فاصله اولیه از بالا
+    } else if (scrollY >= 50) {
+      // وقتی اسکرول بیشتر از 50 شد، navbar به بالای صفحه می‌چسبه
+      navbar.classList.add('top-0');
+      navbar.classList.remove('top-[calc(4rem-2vw)]');
+      navbar.classList.remove('top-14'); // فاصله از بالا به صفر می‌رسه
+    } else {
+      // برگشت به حالت اولیه
+      navbar.classList.add('top-14');
+      navbar.classList.remove('top-[calc(4rem-2vw)]');
+      navbar.classList.remove('top-0');
     }
-  }
+  });
   
-  // اولین بار اجرا
-  fetchVTGPrice();
-  
-  // هر 60 ثانیه یک‌بار آپدیت
-  setInterval(fetchVTGPrice, 60000);
-  
+  /*=============== progress bar ===============*/
+

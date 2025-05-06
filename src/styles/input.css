@@ -3,13 +3,18 @@
 @tailwind utilities;
 
 
+@layer base {
+    @font-face {
+        font-family: 'dana';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('/src/font/Dana-Pro/farsinumral/webfonts/fonts/eot/dana-fanum-black.eot') format('embedded-opentype'),
+            url('/src/font/Dana-Pro/farsinumral/webfonts/fonts/woff/dana-fanum-black.woff') format('woff'),
+            url('/src/font/Dana-Pro/farsinumral/webfonts/fonts/woff2/dana-fanum-medium.woff2') format('woff2');
+    }
 
-@font-face {
-    font-family: dana;
-    font-style: normal;
-    src: url('../font/Dana-Pro/farsinumral/webfonts/fonts/eot/dana-fanum-black.eot') format('embedded-opentype'),
-        url('../font/Dana-Pro/farsinumral/webfonts/fonts/woff/dana-fanum-medium.woff') format('woff'),
-        url('../font/Dana-Pro/farsinumral/webfonts/fonts/woff2/dana-fanum-medium.woff2') format('woff2');
+
 }
 
 * {
@@ -22,6 +27,7 @@
 body {
     max-width: 1350px;
     line-height: 2rem;
+    font: 400 13px / 30px YekanBakh, ficon2, Tahoma, Arial, sans-serif;
 
 }
 
@@ -56,9 +62,7 @@ body {
     right: 0;
 }
 
-.nav__logo {
-    
-}
+.nav__logo {}
 
 nav {
     width: 100%;
