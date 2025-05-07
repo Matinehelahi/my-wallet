@@ -9,6 +9,15 @@
     <link rel="shortcut icon" href="../src/images/favicon/logo-wallet.svg" type="image/x-icon">
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+    <!-- Swiper CSS -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!--=============== CSS ===============-->
     <link href="../dist/output.css" rel="stylesheet">
 
@@ -16,7 +25,7 @@
 
 </head>
 
-<body dir="rtl" class="bg-bodyColor p-5 font-dana">
+<body dir="rtl" class="bg-bodyColor p-5">
     <!--==================== HEADER ====================-->
     <header class="header bg-violet h-16" id="header">
         <div class="slider-container flex">
@@ -53,7 +62,7 @@
                 </div>
             </div>
         </div>
-        <nav class="nav flex p-2 top-14  left-0 transition-all duration-300 z-50 shadow">
+        <nav class="nav flex p-2 top-14  left-0 transition-all duration-300 z-50 shadow h-14">
 
             <div class="nav__menu mt-14" id="nav-menu">
                 <ul class="nav__list">
@@ -65,7 +74,9 @@
 
                             <button
                                 class="btn w-1/2 bg-blueText text-white  rounded-lg  mx-2 border-2 border-blueText border-solid">ثبت
-                                نام </button>
+                                نام 
+                                <img src="/src/images/user-line.svg" alt="">
+                            </button>
                         </div>
                     </li>
                     <li>
@@ -106,7 +117,7 @@
 
     <main class="main">
         <!--==================== HOME ====================-->
-     <section class="home text-textAll m-6" id="home">
+     <section class="home text-textAll mt-10 font-YekanBakh" id="home">
             <div class="">
                 <div class="text-texthome flex justify-center items-center text-3xl font-bold">
                     <span>کیف پول</span>

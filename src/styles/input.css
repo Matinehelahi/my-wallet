@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-@layer base {
+/* @layer base {
     @font-face {
         font-family: 'dana';
         font-style: normal;
@@ -13,10 +13,18 @@
             url('/src/font/Dana-Pro/farsinumral/webfonts/fonts/woff/dana-fanum-black.woff') format('woff'),
             url('/src/font/Dana-Pro/farsinumral/webfonts/fonts/woff2/dana-fanum-medium.woff2') format('woff2');
     }
-
-
+} */
+@layer base {
+    @font-face {
+        font-family: 'YekanBakh';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('/src/font/Yekan-Bakh/Yekan\ Bakh.eot') format('embedded-opentype'),
+            url('/src/font/Yekan-Bakh/Yekan\ Bakh.woff') format('woff'),
+            url('/src/font/Yekan-Bakh/Yekan\ Bakh.ttf') format('ttf');
+    }
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +35,7 @@
 body {
     max-width: 1350px;
     line-height: 2rem;
-    font: 400 13px / 30px YekanBakh, ficon2, Tahoma, Arial, sans-serif;
+    font: 400 13px / 30px YekanBakh, Tahoma, Arial, sans-serif;
 
 }
 
@@ -62,13 +70,9 @@ body {
     right: 0;
 }
 
-.nav__logo {}
-
 nav {
     width: 100%;
-    top: 0;
     right: 0;
-    z-index: 9;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(238, 238, 238);
@@ -107,8 +111,6 @@ nav {
         padding-bottom: 50px;
     }
 }
-
-
 
 .nav__list {
     text-align: right;

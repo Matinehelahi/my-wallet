@@ -555,7 +555,7 @@ video {
 }
 
 @font-face {
-  font-family: 'dana';
+  font-family: 'YekanBakh';
 
   font-style: normal;
 
@@ -563,9 +563,9 @@ video {
 
   font-display: swap;
 
-  src: url('/src/font/Dana-Pro/farsinumral/webfonts/fonts/eot/dana-fanum-black.eot') format('embedded-opentype'),
-            url('/src/font/Dana-Pro/farsinumral/webfonts/fonts/woff/dana-fanum-black.woff') format('woff'),
-            url('/src/font/Dana-Pro/farsinumral/webfonts/fonts/woff2/dana-fanum-medium.woff2') format('woff2');
+  src: url('/src/font/Yekan-Bakh/Yekan\ Bakh.eot') format('embedded-opentype'),
+            url('/src/font/Yekan-Bakh/Yekan\ Bakh.woff') format('woff'),
+            url('/src/font/Yekan-Bakh/Yekan\ Bakh.ttf') format('ttf');
 }
 
 .container {
@@ -610,12 +610,20 @@ video {
   position: relative;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .right-0 {
   right: 0px;
 }
 
 .right-44 {
   right: 11rem;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .top-14 {
@@ -628,22 +636,6 @@ video {
 
 .top-7 {
   top: 1.75rem;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.top-16 {
-  top: 4rem;
 }
 
 .top-\[calc\(4rem-2vw\)\] {
@@ -694,8 +686,16 @@ video {
   margin-top: 1.25rem;
 }
 
-.block {
-  display: block;
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .flex {
@@ -723,6 +723,10 @@ video {
   height: 3rem;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -733,14 +737,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-\[calc\(4rem\+2vw\)\] {
-  height: calc(4rem + 2vw);
 }
 
 .w-1\/2 {
@@ -777,10 +773,6 @@ video {
 
 .w-8 {
   width: 2rem;
-}
-
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -937,8 +929,8 @@ video {
   vertical-align: middle;
 }
 
-.font-dana {
-  font-family: dana;
+.font-YekanBakh {
+  font-family: YekanBakh;
 }
 
 .font-sans {
@@ -1030,15 +1022,15 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1052,6 +1044,18 @@ video {
   transition-duration: 300ms;
 }
 
+/* @layer base {
+    @font-face {
+        font-family: 'dana';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('/src/font/Dana-Pro/farsinumral/webfonts/fonts/eot/dana-fanum-black.eot') format('embedded-opentype'),
+            url('/src/font/Dana-Pro/farsinumral/webfonts/fonts/woff/dana-fanum-black.woff') format('woff'),
+            url('/src/font/Dana-Pro/farsinumral/webfonts/fonts/woff2/dana-fanum-medium.woff2') format('woff2');
+    }
+} */
+
 * {
   margin: 0;
   padding: 0;
@@ -1062,7 +1066,7 @@ video {
 body {
   max-width: 1350px;
   line-height: 2rem;
-  font: 400 13px / 30px YekanBakh, ficon2, Tahoma, Arial, sans-serif;
+  font: 400 13px / 30px YekanBakh, Tahoma, Arial, sans-serif;
 }
 
 .main {
@@ -1096,14 +1100,9 @@ body {
   right: 0;
 }
 
-.nav__logo {
-}
-
 nav {
   width: 100%;
-  top: 0;
   right: 0;
-  z-index: 9;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(238, 238, 238);

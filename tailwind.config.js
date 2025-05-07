@@ -7,7 +7,8 @@ module.exports = {
     fontFamily: {
       'sans': ['ui-sans-serif', 'system-ui', 'sans-serif'],  
       'serif': ['ui-serif', 'Georgia', 'serif'],  
-      'dana': ['dana'],  
+      'dana': ['dana'], 
+      'YekanBakh' : ['YekanBakh'], 
     },
     colors: {
       transparent: 'transparent',
