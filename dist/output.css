@@ -678,6 +678,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-14 {
   margin-top: 3.5rem;
 }
@@ -686,20 +690,12 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -1201,4 +1197,31 @@ nav {
 .button-crypto {
   width: 24rem;
   height: 4rem;
+}
+
+/*============================= header & nav =============================*/
+
+.prices__table td,.prices__table th{
+  padding: 15px;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.table__icon{
+  width: 30px;
+  height: 30px;
+}
+
+.table__icon img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+tbody>tr:nth-of-type(even) {
+  background-color: rgba(150, 150, 150, .1);
 }

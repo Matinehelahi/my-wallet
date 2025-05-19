@@ -44,3 +44,7 @@ if (navClose){
   
   /*=============== progress bar ===============*/
 
+  /*=============== api ===============*/
+var baseUrl=""
+var proxyUrl=""
+var apikey=""

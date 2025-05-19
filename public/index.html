@@ -10,13 +10,10 @@
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
     <!-- Swiper CSS -->
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!--=============== CSS ===============-->
     <link href="../dist/output.css" rel="stylesheet">
@@ -30,7 +27,8 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     <header class="header bg-violet h-16" id="header">
         <div class="slider-container flex">
             <div href="#" class="slider-track w-10/12 h-full text-xs">
-                <div class="slide bg-violets flex justify-between align-middle m-2 p-2 w-48 h-10 rounded-lg cursor-pointer">
+                <div
+                    class="slide bg-violets flex justify-between align-middle m-2 p-2 w-48 h-10 rounded-lg cursor-pointer">
                     <div class="logo-crypto">
                         <img class="w-7" src="../src/images/infiniteloop/vtg.png" alt="crypto">
                     </div>
@@ -74,7 +72,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 
                             <button
                                 class="btn w-1/2 bg-blueText text-white  rounded-lg  mx-2 border-2 border-blueText border-solid">ثبت
-                                نام 
+                                نام
                                 <img src="/src/images/user-line.svg" alt="">
                             </button>
                         </div>
@@ -87,6 +85,46 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
                     </li>
                     <li>
                         <a href="#" class="nav__link">منو کامل</a>
+                        <ul class="">
+
+                            <li><a href="#">
+                                    <i class="icon-buy-crypto"></i>
+                                    ارزهای متاورس
+                                </a></li>
+                            <li> <a href="#">
+                                    ارزهای وب3
+                                </a></li>
+                            <li><a href="#">
+                                    تعدادی از ارز ها
+                                </a></li>
+                            <li><a href="">
+                                    همه ارز ها
+                                </a></li>
+                            <li><a href="">
+                                    ارزهای پیش لیست شده
+                                </a></li>
+                            <li><a href="">
+                                    خرید ارزپاز paws
+                                </a></li>
+                            <li><a href="">
+                                    خرید گیفت کارت
+                                </a></li>
+                            <li><a href="">
+                                    خرید بیت کوین
+                                </a></li>
+                            <li><a href="">
+                                    سواپ ارزدیجیتال
+                                </a></li>
+                            <li><a href="">
+                                    استیکیکنگ تتر
+                                </a></li>
+                            <li><a href="">
+                                    فیمت لحظه ای ارز وطلا
+                                </a></li>
+                            <li><a href="">
+                                    دانلود اپلیکیشن کیف پول من
+                                </a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#" class="nav__link">پشتیبانی</a>
@@ -117,7 +155,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 
     <main class="main">
         <!--==================== HOME ====================-->
-     <section class="home text-textAll mt-10 font-YekanBakh" id="home">
+        <section class="home text-textAll mt-10 font-YekanBakh" id="home">
             <div class="">
                 <div class="text-texthome flex justify-center items-center text-3xl font-bold">
                     <span>کیف پول</span>
@@ -341,7 +379,396 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         <!--==================== Instant currency prices ====================-->
 
         <section class="prices section" id="prices">
-            <div class="prices__container container grid"></div>
+            <div class="prices__container container grid">
+                <div class="flex justify-between">
+                    <h2>
+                        <div></div>
+                        <div>قیمت لحظه‌ای ارزها</div>
+                    </h2>
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+                <table class="prices__table">
+                    <thead>
+                        <tr>
+                            <th class="fixed-side" scope="col"></th>
+                            <th class="hide-item" scope="col">ارز</th>
+                            <th class="hide-item" scope="col">قیمت (دلار)</th>
+                            <th class="hide-item" scope="col">قیمت فروش (تومان)</th>
+                            <th class="hide-item" scope="col">قیمت خرید (تومان)</th>
+                            <th class="hide-item" scope="col">تغییرات</th>
+                            <th class="hide-item" scope="col">نمودار</th>
+                            <th class="hide-item" scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="coin-list-tr">
+                            <th class="fixed-side">
+                                <div class="table__icon">
+                                    <img src="..//src/images/iconCrypto/bitcoin.png" alt="">
+                                </div>
+                            </th>
+                            <td class="hide-item">
+                                <div>
+                                    <div class="fa__name">بیت کوین</div>
+                                    <div class="en__name">BTC</div>
+                                </div>
+                            </td>
+                            <td class="hide-item">
+                                $103,200
+                            </td>
+                            <td class="hide-item">
+                                8,545,063,200
+                            </td>
+                            <td class="hide-item">
+                                8,668,903,200
+                            </td>
+                            <td class="hide-item">
+                                -0.477%
+                            </td>
+                            <td class="hide-item">
+                            </td>
+                            <th class="fixed-side"></th>
+
+
+                        </tr>
+                        <tr class="coin-list-tr">
+                            <th class="fixed-side">
+                                <div class="table__icon">
+                                    <img src="../src/images/iconCrypto/ethereum.png" alt="">
+                                </div>
+                            </th>
+                            <td class="hide-item">
+                                <div>
+                                    <div class="fa__name"> اتریوم </div>
+                                    <div class="en__name">ETH</div>
+                                </div>
+                            </td>
+                            <td class="hide-item">
+                                $103,200
+                            </td>
+                            <td class="hide-item">
+                                8,545,063,200
+                            </td>
+                            <td class="hide-item">
+                                8,668,903,200
+                            </td>
+                            <td class="hide-item">
+                                -0.477%
+                            </td>
+                            <td class="hide-item">
+                            </td>
+                            <th class="fixed-side"></th>
+
+
+                        </tr>
+                        <tr class="coin-list-tr">
+                            <th class="fixed-side">
+                                <div class="table__icon">
+                                    <img src="../src/images/iconCrypto/ripple.png" alt="">
+                                </div>
+                            </th>
+                            <td class="hide-item">
+                                <div>
+                                    <div class="fa__name">ریپل</div>
+                                    <div class="en__name">XRP</div>
+                                </div>
+                            </td>
+                            <td class="hide-item">
+                                $103,200
+                            </td>
+                            <td class="hide-item">
+                                8,545,063,200
+                            </td>
+                            <td class="hide-item">
+                                8,668,903,200
+                            </td>
+                            <td class="hide-item">
+                                -0.477%
+                            </td>
+                            <td class="hide-item">
+                            </td>
+                            <th class="fixed-side"></th>
+
+
+                        </tr>
+                        <tr class="coin-list-tr">
+                            <th class="fixed-side">
+                                <div class="table__icon">
+                                    <img src="../src/images/iconCrypto/usdt.png" alt="">
+                                </div>
+                            </th>
+                            <td class="hide-item">
+                                <div>
+                                    <div class="fa__name"> تتر</div>
+                                    <div class="en__name">USDT</div>
+                                </div>
+                            </td>
+                            <td class="hide-item">
+                                $103,200
+                            </td>
+                            <td class="hide-item">
+                                8,545,063,200
+                            </td>
+                            <td class="hide-item">
+                                8,668,903,200
+                            </td>
+                            <td class="hide-item">
+                                -0.477%
+                            </td>
+                            <td class="hide-item">
+                            </td>
+                            <th class="fixed-side"></th>
+
+
+                        </tr>
+                        <tr class="coin-list-tr">
+                            <th class="fixed-side">
+                                <div class="table__icon">
+                                    <img src="../src/images/iconCrypto/bitcoin-cash.png" alt="">
+                                </div>
+                            </th>
+                            <td class="hide-item">
+                                <div>
+                                    <div class="fa__name"> بیت کوین کش</div>
+                                    <div class="en__name">BCH</div>
+                                </div>
+                            </td>
+                            <td class="hide-item">
+                                $103,200
+                            </td>
+                            <td class="hide-item">
+                                8,545,063,200
+                            </td>
+                            <td class="hide-item">
+                                8,668,903,200
+                            </td>
+                            <td class="hide-item">
+                                -0.477%
+                            </td>
+                            <td class="hide-item">
+                            </td>
+                            <th class="fixed-side"></th>
+
+
+                        </tr>
+                        <tr class="coin-list-tr">
+                            <th class="fixed-side">
+                                <div class="table__icon">
+                                    <img src="../src/images/iconCrypto/litecoin.png" alt="">
+                                </div>
+                            </th>
+                            <td class="hide-item">
+                                <div>
+                                    <div class="fa__name"> لایت کوین</div>
+                                    <div class="en__name">LTC</div>
+                                </div>
+                            </td>
+                            <td class="hide-item">
+                                $103,200
+                            </td>
+                            <td class="hide-item">
+                                8,545,063,200
+                            </td>
+                            <td class="hide-item">
+                                8,668,903,200
+                            </td>
+                            <td class="hide-item">
+                                -0.477%
+                            </td>
+                            <td class="hide-item">
+                            </td>
+                            <th class="fixed-side"></th>
+
+
+                        </tr>
+                        <tr class="coin-list-tr">
+                            <th class="fixed-side">
+                                <div class="table__icon">
+                                    <img src="../src/images/iconCrypto/chainlink.png" alt="">
+                                </div>
+                            </th>
+                            <td class="hide-item">
+                                <div>
+                                    <div class="fa__name"> چین لینک</div>
+                                    <div class="en__name">LINK</div>
+                                </div>
+                            </td>
+                            <td class="hide-item">
+                                $103,200
+                            </td>
+                            <td class="hide-item">
+                                8,545,063,200
+                            </td>
+                            <td class="hide-item">
+                                8,668,903,200
+                            </td>
+                            <td class="hide-item">
+                                -0.477%
+                            </td>
+                            <td class="hide-item">
+                            </td>
+                            <th class="fixed-side"></th>
+
+
+                        </tr>
+                        <tr class="coin-list-tr">
+                            <th class="fixed-side">
+                                <div class="table__icon">
+                                    <img src="../src/images/iconCrypto/cardano.png" alt="">
+                                </div>
+                            </th>
+                            <td class="hide-item">
+                                <div>
+                                    <div class="fa__name">کاردانو</div>
+                                    <div class="en__name">ADA</div>
+                                </div>
+                            </td>
+                            <td class="hide-item">
+                                $103,200
+                            </td>
+                            <td class="hide-item">
+                                8,545,063,200
+                            </td>
+                            <td class="hide-item">
+                                8,668,903,200
+                            </td>
+                            <td class="hide-item">
+                                -0.477%
+                            </td>
+                            <td class="hide-item">
+                            </td>
+                            <th class="fixed-side"></th>
+
+
+                        </tr>
+                        <tr class="coin-list-tr">
+                            <th class="fixed-side">
+                                <div class="table__icon">
+                                    <img src="../src/images/iconCrypto/polkadot.png" alt="">
+                                </div>
+                            </th>
+                            <td class="hide-item">
+                                <div>
+                                    <div class="fa__name">پولکادات</div>
+                                    <div class="en__name">DOT</div>
+                                </div>
+                            </td>
+                            <td class="hide-item">
+                                $103,200
+                            </td>
+                            <td class="hide-item">
+                                8,545,063,200
+                            </td>
+                            <td class="hide-item">
+                                8,668,903,200
+                            </td>
+                            <td class="hide-item">
+                                -0.477%
+                            </td>
+                            <td class="hide-item">
+                            </td>
+                            <th class="fixed-side"></th>
+
+
+                        </tr>
+                        <tr class="coin-list-tr">
+                            <th class="fixed-side">
+                                <div class="table__icon">
+                                    <img src="../src/images/iconCrypto/binancecoin.png" alt="">
+                                </div>
+                            </th>
+                            <td class="hide-item">
+                                <div>
+                                    <div class="fa__name">بایننس کوین</div>
+                                    <div class="en__name">BNB</div>
+                                </div>
+                            </td>
+                            <td class="hide-item">
+                                $103,200
+                            </td>
+                            <td class="hide-item">
+                                8,545,063,200
+                            </td>
+                            <td class="hide-item">
+                                8,668,903,200
+                            </td>
+                            <td class="hide-item">
+                                -0.477%
+                            </td>
+                            <td class="hide-item">
+                            </td>
+                            <th class="fixed-side"></th>
+
+
+                        </tr>
+                        <tr class="coin-list-tr">
+                            <th class="fixed-side">
+                                <div class="table__icon">
+                                    <img src="../src/images/iconCrypto/stellar.png" alt="">
+                                </div>
+                            </th>
+                            <td class="hide-item">
+                                <div>
+                                    <div class="fa__name"> استلار</div>
+                                    <div class="en__name">XLM</div>
+                                </div>
+                            </td>
+                            <td class="hide-item">
+                                $103,200
+                            </td>
+                            <td class="hide-item">
+                                8,545,063,200
+                            </td>
+                            <td class="hide-item">
+                                8,668,903,200
+                            </td>
+                            <td class="hide-item">
+                                -0.477%
+                            </td>
+                            <td class="hide-item">
+                            </td>
+                            <th class="fixed-side"></th>
+
+
+                        </tr>
+                        <tr class="coin-list-tr">
+                            <th class="fixed-side">
+                                <div class="table__icon">
+                                    <img src="../src/images/iconCrypto/usd-coin.png" alt="">
+                                </div>
+                            </th>
+                            <td class="hide-item">
+                                <div>
+                                    <div class="fa__name">ایاس</div>
+                                    <div class="en__name">EOS</div>
+                                </div>
+                            </td>
+                            <td class="hide-item">
+                                $103,200
+                            </td>
+                            <td class="hide-item">
+                                8,545,063,200
+                            </td>
+                            <td class="hide-item">
+                                8,668,903,200
+                            </td>
+                            <td class="hide-item">
+                                -0.477%
+                            </td>
+                            <td class="hide-item">
+                            </td>
+                            <th class="fixed-side"></th>
+
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
         </section>
         <!--==================== My wallet is not just a simple wallet ====================-->
